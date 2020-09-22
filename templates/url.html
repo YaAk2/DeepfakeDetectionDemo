@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+
+<div>
+    <h1>Deepfake Classifier</h1>
+    <hr>
+    <form action="/classify-url" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <p>Paste your URL</p>
+            <div class="custom-url">
+                <input type="url" class="custom-url-input" name="url" id="url">
+                <label class="custom-url-label" for="url"></label>
+            </div>
+        </div>
+        <p><input type="submit" value="Predict"></p>
+    </form> 
+    <h2>{{pred_from_url}}</h2>
+</div>  
+        
+{% endblock %}
+

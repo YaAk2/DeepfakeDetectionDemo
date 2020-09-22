@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+
+<div>
+    <h1>Deepfake Classifier</h1>
+    <hr>
+
+    <form action="/classify-file" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <p>Upload your file</p>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" name="file" id="file">
+                <label class="custom-file-label" for="file"></label>
+            </div>
+        </div>
+        <p><input type="submit" value="Predict"></p>
+    </form>
+    <h2>{{pred_from_file}}</h2>
+</div>          
+{% endblock %}
