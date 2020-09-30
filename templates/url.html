@@ -11,13 +11,13 @@
     <hr>
     <form action="/classify-url" method="POST" enctype="multipart/form-data">
         <div class="form-group">
-            <p>Paste your URL</p>
+            <div>Paste your URL</div>
             <div class="custom-url">
                 <input type="url" class="custom-url-input" name="url" id="url">
                 <label class="custom-url-label" for="url"></label>
             </div>
         </div>
-        <p><input type="submit" value="Predict"></p>
+        <div><input type="submit" value="Predict"></div>
     </form> 
     <h2>{{pred_from_url}}</h2>
 </div>  
