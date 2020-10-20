@@ -37,7 +37,7 @@ def vid2out(video, model):
 
     while (fc < frameCount and ret):
         ret, img = video.read()
-        if cnt==int(fps/fps) and ret:
+        if cnt==int(fps/2) and ret:
             box, probs = detector.detect(img)
             if probs[0] and probs[0]>=0.25:
                 b = np.absolute(np.floor(box[0]).astype(dtype=np.int))
