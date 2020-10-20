@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+
+
+<div class="classification">
+        <form action="/classify-file" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" required>
+            <label class="custom-file-label" for="file"></label>
+            <div>
+                <input type="submit" value="Predict">
+            </div>
+        </form>
+    <div class="prediction">
+        {{pred_from_file}}
+    </div>
+    <div class="info">
+        You can upload any image or video format, i.e. jpeg, png and mp4 or wav.
+    </div>
+</div>
+
+{% endblock %}

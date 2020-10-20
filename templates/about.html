@@ -1,0 +1,115 @@
+{% extends 'index.html' %}
+
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+
+<div>
+    <h3>
+        How it works
+    </h3>
+    <div class="flowchart">
+        <img src="/static/flowchart.png" alt="flowchart">
+    </div>
+    <p>
+        The system takes as input an image, video or an URL. The format of the uploaded files can be any of the common image or video formats. 
+        For the required URL format please refer to the URL page.
+        Firstly, the provided image is fed through a <a href="https://github.com/timesler/facenet-pytorch" target="_blank">MTCNN</a> to detect a face in the image. 
+        If the face detector fails to detect a face in the image the system outputs 'No face detected' and the algorithm terminates. Otherwise, the region of the face is
+        cropped and resized to 256x256. Afterwards, the preprocessed input is fed through the deepfake classifier. The deepfake classifier is a 
+        <a href="https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html" target="_blank">EfficientNet-B0</a> trained on a collection of deepfake and real datasets.
+        Eventually, it predicts wether the preprocessed input is a deepfake or not and the algorithm terminates.
+        The same process is sequentially applied to a specific number of frames when a video is provided and the prediction is avaraged over all these frames.    
+    </p>
+    <h3>
+        Performance
+    </h3>
+    <div>
+        <table class="center"> 
+            <tr>
+                <th>True vs Predicted</th>
+                <th>Attribute Manipulation</th>
+                <th>Expression Swap</th>
+                <th>Entire Face Synthesis</th>
+                <th>Identity Swap</th>
+                <th>Real</th>
+            </tr>
+            <tr>
+                <th>Attribute Manipulation</th>
+                <td>0.95</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.5</td>
+            </tr>
+            <tr>
+                <th>Entire Face Synthesis</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>1.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </table>
+    </div>
+    <p>
+        The table above contains the confusion matrix for <a href="https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html" target="_blank">EfficientNet-B0</a> 
+        on <a href="http://cvlab.cse.msu.edu/dffd-dataset.html" target="_blank">DFFD</a> test set. 
+        The classes Expression Swap, Identity Swap and Real are tested on <a href="http://www.niessnerlab.org/projects/roessler2019faceforensicspp.html" target="_blank">FaceForensics++</a> 
+        automated benchmark. Below you can see the performance of the deepfake classifier on this test set. 
+    </p>
+    <div>
+        <table class="center">
+            <tr>
+                <th>Deepfakes</th>
+                <th>Face2Face</th>
+                <th>FaceSwap</th>
+                <th>NeuralTextures</th>
+                <th>Pristine</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>0.973</td>
+                <td>0.869</td>
+                <td>0.942</td>
+                <td>0.813</td>
+                <td>0.614</td>
+                <td>0.752</td>
+            </tr>
+        </table>
+    </div>
+    <h3>
+        Dataset
+    </h3>
+    <p>
+        The deepfake classifier is trained on a collection of datasets, i.e. the training set consists of  
+        <a href="http://www.niessnerlab.org/projects/roessler2019faceforensicspp.html" target="_blank">FaceForensics++</a> dataset, 
+        <a href="http://cvlab.cse.msu.edu/dffd-dataset.html" target="_blank">DFFD</a> dataset, 
+        300 sample videos of <a href="https://ai.facebook.com/datasets/dfdc/" target="_blank">DFDC</a> dataset, 
+        <a href="https://ai.googleblog.com/2019/09/contributing-data-to-deepfake-detection.html" target="_blank">google's deepfake</a> dataset.
+        These datasets were combined and augmented further. As preprocessing step only cropping and resizing of the samples were used. 
+        Below you can see exemplary the type of augmentations that were used on the training set. 
+    </p>
+    <div>
+        <table class="center">
+            <tr>
+                <td><img src="/static/augmentation/Bild1.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild2.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild3.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild4.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild5.jpg" alt="" width="120" height="120"></td>
+            </tr>
+            <tr>
+                <td><img src="/static/augmentation/Bild6.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild7.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild8.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild9.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild10.jpg" alt="" width="120" height="120"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+        
+{% endblock %}

@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background: #42455a;
+}
+
+.container{
+    width: 1940px;
+    height: 1080px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin: 0 auto;
+}
+
+.intro{
+    text-align: center;
+    font-size: large;
+}
+
+.classification{
+    margin-top: 240px;
+    margin-bottom: 240px;
+    text-align: center;
+}
+
+.prediction{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #00ff2a;
+}
+
+.logo{
+    text-align: center;
+}
+
+.menu{
+    margin-top: 40px;
+}
+.menu nav ul li{
+    display: inline-flex;
+}
+
+.home-btn{
+    height: 50px;
+}
+
+input[type=submit]{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 2px;
+    color: #ffffff;
+    background-origin: 2px solid transparent;
+    background-image: linear-gradient(#4e425a, #00ff2a), radial-gradient(circle at top left, #42455a, #00ff2a);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    cursor: pointer;
+}
+
+.git-btn{
+    margin-left: 1900px;
+}
+
+.irt-logo{
+    margin-left: 1890px;
+}
+
+.page{
+    margin-top: 120px;
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #00ff2a;
+}
+
+p{
+    text-align: justify;
+}
+
+.info{
+
+}
+
+.flowchart{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table.center{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid #00ff2a;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #4e425a;
+}

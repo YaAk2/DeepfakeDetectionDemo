@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+<div class="classification">
+    <form action="/classify-url" method="POST" enctype="multipart/form-data">
+        <input type="url" name="url" id="url" required>            
+        <div>
+            <input type="submit" value="Predict">
+        </div>
+    </form> 
+    <div class="prediction">
+        {{pred_from_url}}
+    </div>
+    <div class="info">
+        Note: if you paste an URL to an image make sure that the it ends on a valid image format, i.e. jpeg or png.
+    </div>
+</div>          
+{% endblock %}
+
