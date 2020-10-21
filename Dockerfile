@@ -1,5 +1,5 @@
 # For more information, please refer to https://aka.ms/vscode-docker-python
-FROM python:3.8-slim-buster
+FROM python:3.8-buster
 
 EXPOSE 5000
 
@@ -8,6 +8,9 @@ ENV PYTHONDONTWRITEBYTECODE=1
 
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
+
+
+RUN apt-get update && apt-get install -y libgl1-mesa-dev 
 
 # Install pip requirements
 ADD requirements.txt .
@@ -21,4 +24,6 @@ RUN useradd appuser && chown -R appuser /app
 USER appuser
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["flask run"]
+
+ENTRYPOINT [ "python" ]
+CMD ["app.py"]
