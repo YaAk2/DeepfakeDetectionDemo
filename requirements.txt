@@ -1,4 +1,6 @@
+# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
 flask==1.1.2
+gunicorn==20.0.4
 numpy==1.18.1
 opencv-python>=3.4.1.15
 torch==1.4.0
