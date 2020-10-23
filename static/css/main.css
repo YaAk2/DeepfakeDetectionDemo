@@ -1,5 +1,4 @@
 *{
-    margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     color: #ffffff;
@@ -7,13 +6,68 @@
 }
 
 .container{
-    width: 1940px;
-    height: 1080px;
+    position: absolute;
+    /* width: 1940px;
+    height: 1080px; */
+    width: 100%;
+    height: 100%;
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 40px;
     margin-top: 40px;
-    margin: 0 auto;
+}
+
+.home-btn{
+    height: 50px;
+}
+
+.lmenu{
+    position: absolute;
+    left: 0;
+}
+.lmenu nav ul li{
+    display: inline-flex;
+}
+
+.rmenu{
+    position: absolute;
+    right: 0;
+}
+
+.rmenu nav ul li{
+    display: inline-flex;
+}
+
+.logo{
+    text-align: center;
+    margin-top: 80px;
+}
+
+input[type=submit]{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 2px;
+    color: #ffffff;
+    background-origin: 2px solid transparent;
+    background-image: linear-gradient(#4e425a, #00ff2a), radial-gradient(circle at top left, #42455a, #00ff2a);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    cursor: pointer;
+}
+
+
+.page{
+    margin-top: 120px;
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #00ff2a;
+}
+
+p{
+    text-align: justify;
 }
 
 .intro{
@@ -33,58 +87,6 @@
     color: #00ff2a;
 }
 
-.logo{
-    text-align: center;
-}
-
-.menu{
-    margin-top: 40px;
-}
-.menu nav ul li{
-    display: inline-flex;
-}
-
-.home-btn{
-    height: 50px;
-}
-
-input[type=submit]{
-    list-style: none;
-    text-decoration: none;
-    margin: 0 2px;
-    color: #ffffff;
-    background-origin: 2px solid transparent;
-    background-image: linear-gradient(#4e425a, #00ff2a), radial-gradient(circle at top left, #42455a, #00ff2a);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    cursor: pointer;
-}
-
-.git-btn{
-    margin-left: 1900px;
-}
-
-.irt-logo{
-    margin-left: 1890px;
-}
-
-.page{
-    margin-top: 120px;
-}
-
-h3{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #00ff2a;
-}
-
-p{
-    text-align: justify;
-}
-
-.info{
-
-}
 
 .flowchart{
     margin-top: 20px;
