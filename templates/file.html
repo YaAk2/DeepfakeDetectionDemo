@@ -1,12 +1,38 @@
 {% extends 'index.html' %}
 
 {% block body %}
+<div>
+    <iframe class="fakeexamples" src="https://www.youtube.com/embed/5hZOcmqWKzY" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    <div>
+        <input type="button" value="Predict" onclick="classify_merkelfake()">
+    </div>
+    <p id="classify_merkelfake"></p>
+    <script>
+        function classify_merkelfake(){
+            document.getElementById("classify_merkelfake").innerHTML = "Fake: 90.12% Real: 9.88%";
+            }
+    </script>
 
+    <iframe class="fakeexamples" src="https://www.youtube.com/embed/Ho9h0ouemWQ" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    <div>
+        <input type="button" value="Predict" onclick="classify_saulfake()">
+    </div>
+    <p id="classify_saulfake"></p>
+    <script>
+        function classify_saulfake(){
+            document.getElementById("classify_saulfake").innerHTML = "Fake: 96.15% Real: 3.85%";
+            }
+    </script>
+
+</div>
 
 <div class="classification">
         <form action="/classify-file" method="POST" enctype="multipart/form-data">
             <input type="file" name="file" id="file" required>
-            <label class="custom-file-label" for="file"></label>
             <div>
                 <input type="submit" value="Predict">
             </div>

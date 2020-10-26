@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210px"
+   height="194px"
+   viewBox="0 0 210 194"
+   version="1.1"
+   id="svg861"
+   sodipodi:docname="git.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata865">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Group</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     id="namedview863"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="2.1286101"
+     inkscape:cx="108.33752"
+     inkscape:cy="21.726877"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Page-1" />
+  <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title841">Group</title>
+  <desc
+     id="desc843">Created with Sketch.</desc>
+  <defs
+     id="defs845" />
+  <g
+     id="Page-1"
+     sketch:type="MSPage"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+    <g
+       id="Fill-1-+-Group-24"
+       sketch:type="MSLayerGroup"
+       inkscape:export-filename="C:\Users\yakrami\Desktop\deepfakedetection\static\git.png"
+       inkscape:export-xdpi="10"
+       inkscape:export-ydpi="10">
+      <g
+         id="Group-24"
+         sketch:type="MSShapeGroup">
+        <g
+           id="Group">
+          <path
+             d="m 105.0614,193.655 v 0 l 38.64,-118.921 h -77.28 z"
+             id="Fill-4"
+             inkscape:connector-curvature="0"
+             style="fill:#e24329" />
+          <path
+             id="Fill-6"
+             inkscape:connector-curvature="0"
+             style="fill:#fc6d26" />
+          <path
+             d="M 105.0614,193.6548 66.4214,74.7338 H 12.2684 Z"
+             id="Fill-8"
+             inkscape:connector-curvature="0"
+             style="fill:#fc6d26" />
+          <path
+             id="Fill-10"
+             inkscape:connector-curvature="0"
+             style="fill:#fc6d26" />
+          <path
+             d="m 12.2685,74.7341 v 0 l -11.742,36.139 c -1.071,3.296 0.102,6.907 2.906,8.944 l 101.629,73.838 z"
+             id="Fill-12"
+             inkscape:connector-curvature="0"
+             style="fill:#fca326" />
+          <path
+             id="Fill-14"
+             inkscape:connector-curvature="0"
+             style="fill:#fc6d26" />
+          <path
+             d="m 12.2685,74.7342 h 54.153 L 43.1485,3.1092 c -1.197,-3.686 -6.411,-3.685 -7.608,0 z"
+             id="Fill-16"
+             inkscape:connector-curvature="0"
+             style="fill:#e24329" />
+          <path
+             d="m 105.0614,193.6548 38.64,-118.921 h 54.153 z"
+             id="Fill-18"
+             inkscape:connector-curvature="0"
+             style="fill:#fc6d26" />
+          <path
+             d="m 197.8544,74.7341 v 0 l 11.742,36.139 c 1.071,3.296 -0.102,6.907 -2.906,8.944 l -101.629,73.838 z"
+             id="Fill-20"
+             inkscape:connector-curvature="0"
+             style="fill:#fca326" />
+          <path
+             d="m 197.8544,74.7342 h -54.153 l 23.273,-71.625 c 1.197,-3.686 6.411,-3.685 7.608,0 z"
+             id="Fill-22"
+             inkscape:connector-curvature="0"
+             style="fill:#e24329" />
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:#00ff2a;fill-opacity:1;fill-rule:evenodd;stroke:#008600;stroke-width:2.30551171;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 52.949267,155.60552 C 23.171826,133.96875 2.2508578,118.46092 1.6246967,117.56078 -0.32494144,114.75805 0.03348124,112.94076 6.390818,93.395361 c 3.1936022,-9.818613 5.914408,-17.852024 6.046234,-17.852024 0.298803,0 91.109798,116.348973 90.918718,116.486993 -0.0764,0.0552 -22.759354,-16.33595 -50.406503,-36.42481 z"
+       id="path875"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\yakrami\Desktop\deepfakedetection\static\git.png"
+       inkscape:export-xdpi="10"
+       inkscape:export-ydpi="10" />
+    <path
+       style="fill:#00ff2a;fill-opacity:1;fill-rule:evenodd;stroke:#008600;stroke-width:2.30551171;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 107.31664,190.99426 c 0.39712,-0.45217 20.74676,-26.50791 45.22144,-57.90163 24.47467,-31.39373 44.6705,-57.261971 44.87961,-57.484988 0.20911,-0.223016 2.98322,7.493286 6.1647,17.14734 4.97414,15.093838 5.78607,17.980608 5.79574,20.606458 0.008,2.1475 -0.23239,3.41205 -0.80981,4.26146 -0.76254,1.12173 -100.84982,74.19349 -101.62374,74.19349 -0.19248,0 -0.0251,-0.36996 0.37206,-0.82213 z"
+       id="path877"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\yakrami\Desktop\deepfakedetection\static\git.png"
+       inkscape:export-xdpi="10"
+       inkscape:export-ydpi="10" />
+    <path
+       style="fill:#00d62a;fill-opacity:1;fill-rule:evenodd;stroke:#008600;stroke-width:2.30551171;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 107.21003,188.19035 c 0,-0.47294 13.96893,-43.69617 31.05347,-96.086912 l 5.63002,-17.264786 h 26.05342 c 14.32938,0 26.05342,0.09481 26.05342,0.210687 0,0.236703 -87.11217,111.916521 -88.13565,112.991951 -0.40576,0.42635 -0.65468,0.48302 -0.65468,0.14906 z"
+       id="path879"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\yakrami\Desktop\deepfakedetection\static\git.png"
+       inkscape:export-xdpi="10"
+       inkscape:export-ydpi="10" />
+    <path
+       style="fill:#00d62a;fill-opacity:1;fill-rule:evenodd;stroke:#008600;stroke-width:2.30551171;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 102.80284,190.4687 c -0.43984,-0.48601 -0.73803,-1.16477 -0.66266,-1.50835 0.0754,-0.34357 -0.16244,-0.63429 -0.52849,-0.64603 -0.36604,-0.0118 -0.76343,-0.31504 -0.88308,-0.67399 -0.15043,-0.45131 -0.0176,-0.53218 0.43065,-0.26216 0.50791,0.30597 0.5351,0.24387 0.12561,-0.28695 C 87.867879,169.69849 23.289806,86.983567 16.94687,79.066763 l -3.199361,-3.993216 26.134813,-0.121426 c 14.374148,-0.06678 26.215976,-0.04026 26.315172,0.05893 0.362444,0.36244 37.781286,115.965069 37.596106,116.150259 -0.10508,0.10507 -0.55092,-0.2066 -0.99076,-0.69261 z"
+       id="path881"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\yakrami\Desktop\deepfakedetection\static\git.png"
+       inkscape:export-xdpi="10"
+       inkscape:export-ydpi="10" />
+    <path
+       style="fill:#00bc2a;fill-opacity:1;fill-rule:evenodd;stroke:#008600;stroke-width:2.30551171;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 104.47024,190.76085 c -0.30181,-1.19859 -0.54874,-2.55636 -0.54874,-3.01726 0,-0.46089 -2.4462,-8.45354 -5.435995,-17.76144 C 90.66898,145.64758 72.377657,89.335705 69.876148,81.905066 c -1.170671,-3.477433 -2.128492,-6.489962 -2.128492,-6.694509 0,-0.204548 16.82936,-0.371905 37.398574,-0.371905 32.79167,0 37.36578,0.08548 37.13231,0.693893 -0.42759,1.114287 -32.95427,101.421465 -34.77947,107.254415 -0.91199,2.91454 -1.55661,5.56381 -1.43248,5.88727 0.12412,0.32346 -0.0608,1.41561 -0.41096,2.427 l -0.63664,1.8389 z"
+       id="path885"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\yakrami\Desktop\deepfakedetection\static\git.png"
+       inkscape:export-xdpi="10"
+       inkscape:export-ydpi="10" />
+    <path
+       style="fill:#00bc2a;fill-opacity:1;fill-rule:evenodd;stroke:#008600;stroke-width:2.30551171;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 195.06078,73.903116 c 0,-0.300534 -8.98477,-0.508839 -25.32955,-0.587237 l -25.32955,-0.121493 7.25927,-22.315031 c 3.99259,-12.273267 9.16776,-28.194866 11.50036,-35.381332 2.49106,-7.6746453 4.61659,-13.4417841 5.15106,-13.9762564 0.50047,-0.5004748 1.53238,-0.90995426 2.29313,-0.90995426 3.04519,0 2.92916,-0.28600867 14.96096,36.87852466 6.19013,19.120458 11.40145,35.240131 11.58069,35.821497 0.27943,0.906323 0.15394,1.057027 -0.88024,1.057027 -0.66337,0 -1.20613,-0.209582 -1.20613,-0.465745 z"
+       id="path887"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\yakrami\Desktop\deepfakedetection\static\git.png"
+       inkscape:export-xdpi="10"
+       inkscape:export-ydpi="10" />
+    <path
+       style="fill:#00bc2a;fill-opacity:1;fill-rule:evenodd;stroke:#008600;stroke-width:2.30551171;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 12.919103,73.275073 C 13.034163,72.972312 18.24732,56.974882 24.503895,37.725232 31.960331,14.783964 36.218047,2.3616972 36.862179,1.6688401 c 1.241513,-1.33542783 3.571427,-1.39134267 4.937666,-0.1184974 0.554066,0.5161917 1.557744,2.6830986 2.230394,4.8153487 1.210362,3.8367576 21.347519,65.9231786 21.675272,66.8286946 0.111862,0.309061 -8.9248,0.497395 -26.412785,0.550477 -20.153527,0.06117 -26.532227,-0.05246 -26.373623,-0.46979 z"
+       id="path889"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\yakrami\Desktop\deepfakedetection\static\git.png"
+       inkscape:export-xdpi="10"
+       inkscape:export-ydpi="10" />
+  </g>
+</svg>

@@ -46,7 +46,6 @@ def refresh_about():
 def refresh_acknowledge():
     return render_template('acknowledgements.html')
 
-
 @app.route("/classify-file", methods=["Get", "POST"])
 def classify_file():
     if request.method == "POST":
@@ -68,7 +67,7 @@ def classify_file():
                     c = 'Please check if the uploaded file a valid image/video format'
         return render_template("file.html", pred_from_file=c)
     elif request.method == "GET":
-        return render_template('file.html')
+        return redirect('file.html')
 
 
 @app.route("/classify-url", methods=["GET", "POST"])
