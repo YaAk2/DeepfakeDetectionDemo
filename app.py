@@ -65,7 +65,11 @@ def classify_file():
                     os.remove('tmp.mp4')
                 except:
                     c = 'Please check if the uploaded file a valid image/video format'
-        return render_template("file.html", pred_from_file=c)
+        try:
+            return render_template("file.html", pred_from_file=c)
+        except UnboundLocalError:
+            c = 'Please check if the uploaded file a valid image/video format'
+            return render_template("file.html", pred_from_file=c)
     elif request.method == "GET":
         return redirect('file.html')
 
