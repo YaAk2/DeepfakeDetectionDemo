@@ -45,9 +45,13 @@ img.DFirtlogo{
     margin-left: 5px;
 }
 
+.examples{
+    display: inline-flex;
+}
+
 iframe.fakeexamples{
-    width: 560px;
-    height: 315px;
+    width: 100%;
+    height: 100%;
 }
 
 .predict-example-btn{
