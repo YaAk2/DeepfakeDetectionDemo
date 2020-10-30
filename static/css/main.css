@@ -84,6 +84,11 @@ h3{
     color: #00ff2a;
 }
 
+.info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 p{
     text-align: justify;
 }
@@ -94,8 +99,8 @@ p{
 }
 
 .classification{
-    margin-top: 240px;
-    margin-bottom: 240px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     text-align: center;
 }
 

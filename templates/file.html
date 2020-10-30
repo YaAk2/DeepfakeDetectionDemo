@@ -1,6 +1,15 @@
 {% extends 'index.html' %}
 
 {% block body %}
+<div>
+    <p>
+        There are four types of deepfakes, namely Entire Face Synthesis, Expression Swap, Identity Swap and Attribute Manipulation. 
+        Among these four types, Identity Swap and Expression Swap are the most popular types and are commonly known as deepfakes. 
+        Identity Swap replaces the face of person A with person B and Expression Swap modifies facial expression. 
+        The first three videos below are Identity Swaps and the fourth one is a Expression Swap. 
+        You can click on predict and it will show our systems prediction. 
+    </p>
+</div>
 <div class="examples">
     <div>
         <iframe class="fakeexamples" src="https://www.youtube.com/embed/5hZOcmqWKzY" 
@@ -60,13 +69,16 @@
     </div>
 </div>
 
-<div class="classification">
-        <form action="/classify-file" method="POST" enctype="multipart/form-data">
-            <input type="file" name="file" id="file" required>
-            <div>
-                <input type="submit" value="Predict">
-            </div>
-        </form>
+<div class="classification">    
+    <div class="info">
+        Or if you want to classify a file you can upload it below and hit the predict button. 
+    </div>
+    <form action="/classify-file" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" id="file" required>
+        <div>
+            <input type="submit" value="Predict">
+        </div>
+    </form>
     <div class="prediction">
         {{pred_from_file}}
     </div>
