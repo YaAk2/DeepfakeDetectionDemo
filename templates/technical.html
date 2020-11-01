@@ -3,12 +3,19 @@
 {% block body %}
 
 <div>
+    <h3>What is a Deepfake?</h3>
+    <p>
+        A DeepFake is a synthetic type of media, manipulated by <a href="https://lab.irt.de/deep-learning-in-multimedia/" target="_blank">Deep Learning</a> algorithms, 
+        where the person saying or doing something is realistically replaced by another person. 
+        DeepFakes can be used a very convincing means of misinformation. The amount as well as the quality of DeepFakes that are circulated in the web every day is rapidly increasing, 
+        thus being an increasing <a href="https://www.zdf.de/nachrichten/digitales/deepfake-video-sorge-faelschungen-100.html" target="_blank">threat for democracy</a>.
+    </p>
     <h3>
         How it works
     </h3>
-    <div class="flowchart">
+    <!-- <div class="flowchart">
         <img src="/static/flowchart.svg" alt="flowchart">
-    </div>
+    </div> -->
     <p>
         The system takes as input an image, video or an URL. The format of the uploaded files can be any of the common image or video formats. 
         For the required URL format please refer to the URL page.
@@ -19,6 +26,36 @@
         Eventually, it predicts wether the preprocessed input is a deepfake or not and the algorithm terminates.
         The same process is sequentially applied to a specific number of frames when a video is provided and the prediction is avaraged over all these frames.    
     </p>
+    <h3>
+        Dataset
+    </h3>
+    <p>
+        The deepfake classifier is trained on a collection of datasets, i.e. the training set consists of  
+        <a href="http://www.niessnerlab.org/projects/roessler2019faceforensicspp.html" target="_blank">FaceForensics++</a> dataset, 
+        <a href="http://cvlab.cse.msu.edu/dffd-dataset.html" target="_blank">DFFD</a> dataset, 
+        300 sample videos of <a href="https://ai.facebook.com/datasets/dfdc/" target="_blank">DFDC</a> dataset, 
+        <a href="https://ai.googleblog.com/2019/09/contributing-data-to-deepfake-detection.html" target="_blank">google's deepfake</a> dataset.
+        These datasets were combined and augmented further. As preprocessing step only cropping and resizing of the samples were used. 
+        Below you can see exemplary the type of augmentations that were used on the training set. 
+    </p>
+    <div class="augmentation">
+        <table class="center">
+            <tr>
+                <td><img src="/static/augmentation/Bild1.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild2.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild3.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild4.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild5.jpg" alt="" width="120" height="120"></td>
+            </tr>
+            <tr>
+                <td><img src="/static/augmentation/Bild6.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild7.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild8.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild9.jpg" alt="" width="120" height="120"></td>
+                <td><img src="/static/augmentation/Bild10.jpg" alt="" width="120" height="120"></td>
+            </tr>
+        </table>
+    </div>
     <h3>
         Performance
     </h3>
@@ -76,36 +113,5 @@
             </tr>
         </table>
     </div>
-    <h3>
-        Dataset
-    </h3>
-    <p>
-        The deepfake classifier is trained on a collection of datasets, i.e. the training set consists of  
-        <a href="http://www.niessnerlab.org/projects/roessler2019faceforensicspp.html" target="_blank">FaceForensics++</a> dataset, 
-        <a href="http://cvlab.cse.msu.edu/dffd-dataset.html" target="_blank">DFFD</a> dataset, 
-        300 sample videos of <a href="https://ai.facebook.com/datasets/dfdc/" target="_blank">DFDC</a> dataset, 
-        <a href="https://ai.googleblog.com/2019/09/contributing-data-to-deepfake-detection.html" target="_blank">google's deepfake</a> dataset.
-        These datasets were combined and augmented further. As preprocessing step only cropping and resizing of the samples were used. 
-        Below you can see exemplary the type of augmentations that were used on the training set. 
-    </p>
-    <div class="augmentation">
-        <table class="center">
-            <tr>
-                <td><img src="/static/augmentation/Bild1.jpg" alt="" width="120" height="120"></td>
-                <td><img src="/static/augmentation/Bild2.jpg" alt="" width="120" height="120"></td>
-                <td><img src="/static/augmentation/Bild3.jpg" alt="" width="120" height="120"></td>
-                <td><img src="/static/augmentation/Bild4.jpg" alt="" width="120" height="120"></td>
-                <td><img src="/static/augmentation/Bild5.jpg" alt="" width="120" height="120"></td>
-            </tr>
-            <tr>
-                <td><img src="/static/augmentation/Bild6.jpg" alt="" width="120" height="120"></td>
-                <td><img src="/static/augmentation/Bild7.jpg" alt="" width="120" height="120"></td>
-                <td><img src="/static/augmentation/Bild8.jpg" alt="" width="120" height="120"></td>
-                <td><img src="/static/augmentation/Bild9.jpg" alt="" width="120" height="120"></td>
-                <td><img src="/static/augmentation/Bild10.jpg" alt="" width="120" height="120"></td>
-            </tr>
-        </table>
-    </div>
-</div>
-        
+</div>  
 {% endblock %}

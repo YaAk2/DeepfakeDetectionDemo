@@ -5,51 +5,65 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../static/css/main.css">
+        <script type="javascript" src="../static/js/main.js"></script>
         <title> DFirt </title>
     </head>
     <body>
         <div class="container">
+            <img class="DFirtlogo" src="/static/logo.svg" alt="DFirt logo">
+            <a href="https://gitlab.irt.de/ai/deepfake_detection" class="git-btn" aria-label="View source on GitLab" target="_blank">
+                <svg class="tanuki-logo" viewBox="0 0 36 36">
+                    <path class="tanuki-shapes tanuki-left-ear" fill="#004f9f" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"></path>
+                    <path class="tanuki-shapes tanuki-right-ear" fill="#004f9f" d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"></path>
+                    <path class="tanuki-shape tanuki-nose" fill="#004f9f" d="M18,34.38 3,14 33,14 Z"></path>
+                    <path class="tanuki-shape tanuki-left-eye" fill="#005fbe" d="M18,34.38 11.38,14 2,14 6,25Z"></path>
+                    <path class="tanuki-shape tanuki-right-eye" fill="#005fbe" d="M18,34.38 24.62,14 34,14 30,25Z"></path>
+                    <path class="tanuki-shape tanuki-left-cheek" fill="#0080ff" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"></path>
+                    <path class="tanuki-shape tanuki-right-cheek" fill="#0080ff" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"></path>
+                  </svg>
+            <!-- <a href="https://gitlab.irt.de/ai/deepfake_detection">
+                <img class="git-btn" title="Go to GitLab" src="/static/git.svg" alt="git button">
+            </a> -->
+            <!-- <div class="logo"> -->
+            <a href="https://lab.irt.de/" target="_blank">
+                <img class="IRTlogo" title="Go to IRT Lab" src="/static/logo_IRTLab.png" alt="IRT Lab logo">
+            </a>
+            <!-- </div> -->
             <div class="menu">
                 <nav>
                     <ul>
-                        <li>
+                        <!-- <li>
                             <form action="/home.html" method="POST">
                                 <input class="home-btn" title="Home" type="image" src="/static/home_button.svg" alt="home button">
                             </form>
-                        </li>
+                        </li> -->
                         <li>
+                            <form action="/welcome.html" method="POST">
+                                <input class="nav" type="submit" name="welcome" value="Welcome">
+                            </form>
+                        </li>
+                        <!-- <li>
                             <form action="/file.html" method="POST">
                                 <input type="submit" title="classify a file" name="File" value="File">
                             </form>
-                        </li>
+                        </li> -->
                         <li>
-                            <form action="/url.html" method="POST">
-                                <input type="submit" title="classify an URL" name="URL" value="URL">
+                            <form action="/deepfakedetection.html" method="POST">
+                                <input class="nav" type="submit" title="classify a file or an URL" name="deepfakedetection" value="Deepfake Detection">
                             </form>
                         </li>
                         <li>
-                            <form action="/about.html" method="POST">
-                                <input type="submit" title="more information" name="About" value="About">
-                            </form>
-                        </li>
-                        <li>
-                            <form action="/acknowledgements.html" method="POST">
-                                <input type="submit" title="acknowledgements" name="acknowledge" value="Acknowledgements">
+                            <form action="/technical.html" method="POST">
+                                <input class="nav" type="submit" title="more about the technical description" name="technical" value="Technical Description">
                             </form>
                          </li>
-                         <li>
-                            <a href="https://gitlab.irt.de/ai/deepfake_detection">
-                                <img class="git-btn" title="GitLab" src="/static/git.svg" alt="git button">
-                            </a>
+                        <li>
+                            <form action="/acknowledgements.html" method="POST">
+                                <input class="nav" type="submit" title="see acknowledgements" name="acknowledge" value="Acknowledgements">
+                            </form>
                          </li>
                     </ul>
                 </nav>
-            </div>
-            <div class="logo">
-                <a href="https://www.irt.de/de/home">
-                    <img class="IRTlogo" title="IRT Home" src="/static/Logo_irt_vers.svg" alt="IRT logo">
-                </a>
-                <img class="DFirtlogo" src="/static/logo.svg" alt="DFirt logo">
             </div>
             <div class="page">
                 {% block body %}{% endblock %}

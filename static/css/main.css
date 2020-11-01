@@ -1,8 +1,8 @@
 *{
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
-    background: #42455a;
+    font-family: 'Roboto', sans-serif;
+    color: #00000065;
+    background: #ffffff;
 }
 
 .container{
@@ -11,65 +11,55 @@
     height: 100%;
 }
 
-.home-btn{
-    width: 20px;
-    height: auto;
+.menu{
+    margin-top: 200px;
+    text-align: center;
 }
 
-.menu{
-    position: absolute;
-    left: 0;
-}
 .menu nav ul li{
     display: inline-flex;
     transition: all ease-in-out 0.2s;
 }
 
-.git-btn{
-    width: 15px;
-    height: auto;
+.nav{
+    border: none;
+    font-size: 15px
 }
 
-.logo{
-    text-align: center;
-    margin-top: 80px;
+.nav:hover{
+    text-decoration: underline;
+    text-decoration-color: #004f9f;
+}
+
+ .git-btn{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
 }
 
 img.IRTlogo{
-    width: 240px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 350px;
     height: auto;
 }
 
 img.DFirtlogo{
+    position: absolute;
+    left: 0;
     width: 100px;
     height: auto;
-    margin-left: 5px;
+    margin-right: 10px;
 }
 
-.examples{
-    text-align: center;
-    display: inline-flex;
-}
-
-iframe.fakeexamples{
-    width: 100%;
-    height: 100%;
-    overflow-x: auto;
-}
-
-.predict-example-btn{
-    margin-left: 220px;
-}
-
-input[type=submit], input[type=button]{
-    list-style: none;
-    text-decoration: none;
+input[type=submit]:hover, input[type=button]:hover{
     margin: 0 2px;
-    color: #ffffff;
-    background-origin: 2px solid transparent;
-    background-image: linear-gradient(#4e425a, #00ff2a), radial-gradient(circle at top left, #42455a, #00ff2a);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
     cursor: pointer;
 }
 
@@ -81,7 +71,7 @@ input[type=submit], input[type=button]{
 h3{
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #00ff2a;
+    color: #0000009a;
 }
 
 .info{
@@ -99,7 +89,7 @@ p{
 }
 
 .classification{
-    margin-top: 200px;
+    margin-top: 80px;
     margin-bottom: 200px;
     text-align: center;
 }
@@ -107,15 +97,7 @@ p{
 .prediction{
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #00ff2a;
-}
-
-
-.flowchart{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    overflow-x: auto;
+    color: #00000065;
 }
 
 table.center{
@@ -136,11 +118,11 @@ table.center{
 }
 
 td, th{
-    border: 1px solid #00ff2a;
+    border: 1px solid #00000065;
     text-align: center;
     padding: 8px;
 }
 
 tr:nth-child(even){
-    background-color: #4e425a;
+    background-color: #00000065;
 }

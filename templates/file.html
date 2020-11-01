@@ -1,7 +1,7 @@
 {% extends 'index.html' %}
 
 {% block body %}
-<div>
+<!-- <div>
     <p>
         There are four types of deepfakes, namely Entire Face Synthesis, Expression Swap, Identity Swap and Attribute Manipulation. 
         Among these four types, Identity Swap and Expression Swap are the most popular types and are commonly known as deepfakes. 
@@ -67,24 +67,6 @@
                 }
         </script>
     </div>
-</div>
-
-<div class="classification">    
-    <div class="info">
-        Or if you want to classify a file you can upload it below and hit the predict button. 
-    </div>
-    <form action="/classify-file" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" id="file" required>
-        <div>
-            <input type="submit" value="Predict">
-        </div>
-    </form>
-    <div class="prediction">
-        {{pred_from_file}}
-    </div>
-    <div class="info">
-        You can upload any image or video format, i.e. jpeg, png and mp4 or wav.
-    </div>
-</div>
+</div> -->
 
 {% endblock %}

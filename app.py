@@ -21,26 +21,25 @@ def load_model_to_app():
     
 
 @app.route("/", methods=["GET", "POST"])
-def home():
-    return redirect('/home.html')
+def welcome():
+    return redirect('/welcome.html')
 
-@app.route("/home.html", methods=["GET", "POST"])
-def refresh_home():
-    return render_template('home.html')
+@app.route("/welcome.html", methods=["GET", "POST"])
+def refresh_welcome():
+     return render_template('welcome.html')
 
-
-@app.route("/file.html", methods=["GET", "POST"])
-def refresh_file():
-    return render_template('file.html')
+# @app.route("/file.html", methods=["GET", "POST"])
+# def refresh_file():
+#     return render_template('file.html')
 
         
-@app.route("/url.html", methods=["GET", "POST"])
-def refresh_url():
-    return render_template('url.html')
+@app.route("/deepfakedetection.html", methods=["GET", "POST"])
+def refresh_dfd():
+    return render_template('deepfakedetection.html')
 
-@app.route("/about.html", methods=["GET", "POST"])
-def refresh_about():
-    return render_template('about.html')
+@app.route("/technical.html", methods=["GET", "POST"])
+def refresh_technical():
+    return render_template('technical.html')
 
 @app.route("/acknowledgements.html", methods=["GET", "POST"])
 def refresh_acknowledge():
@@ -66,12 +65,12 @@ def classify_file():
                 except:
                     c = 'Please check if the uploaded file a valid image/video format'
         try:
-            return render_template("file.html", pred_from_file=c)
+            return render_template("deepfakedetection.html", pred_from_file=c)
         except UnboundLocalError:
             c = 'Please check if the uploaded file a valid image/video format'
-            return render_template("file.html", pred_from_file=c)
+            return render_template("deepfakedetection.html", pred_from_file=c)
     elif request.method == "GET":
-        return redirect('file.html')
+        return redirect('deepfakedetection.html')
 
 
 @app.route("/classify-url", methods=["GET", "POST"])
@@ -96,9 +95,9 @@ def classify_url():
                     c = vid2out(video, app.predictor)
                 except ValueError:
                     c = 'Please check if the URL is valid'
-        return render_template("url.html", pred_from_url=c)
+        return render_template("deepfakedetection.html", pred_from_url=c)
     elif request.method == "GET":
-        return redirect('url.html')
+        return redirect('deepfakedetection.html')
 
 def main():
     app.run(host='0.0.0.0') 
