@@ -12,13 +12,14 @@
 }
 
 .menu{
-    margin-top: 200px;
+    margin-top: 60px;
     text-align: center;
 }
 
 .menu nav ul li{
     display: inline-flex;
     transition: all ease-in-out 0.2s;
+    margin: 8px;
 }
 
 .nav{
@@ -32,34 +33,34 @@
 }
 
  .git-btn{
-    position: absolute;
+    margin-top: 32px;
+    float: right;
     right: 0;
     width: 50px;
     height: auto;
+    margin-right: 10px;
     margin-left: 10px;
 }
 
 img.IRTlogo{
-    position: absolute;
+    position: static;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+    display: block;
     width: 350px;
     height: auto;
 }
 
 img.DFirtlogo{
-    position: absolute;
+    float: left;
     left: 0;
     width: 100px;
     height: auto;
+    margin-left: 10px;
     margin-right: 10px;
 }
 
-input[type=submit]:hover, input[type=button]:hover{
-    margin: 0 2px;
+input[type=submit], input[type=button]{
     cursor: pointer;
 }
 
@@ -74,9 +75,16 @@ h3{
     color: #0000009a;
 }
 
+h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0000009a;
+}
+
 .info{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom:20px;
 }
 
 p{
@@ -98,6 +106,53 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
     color: #00000065;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.predict-btn{
+    background-color: #004f9f;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+body.loading .modal {
+    overflow: hidden;   
+}
+
+body.loading .modal {
+    display: block;
+}
+
+.technical{
+    text-align: center;
+}
+
+.deepfaketypes{
+    width: 515px;
+    height: auto;
 }
 
 table.center{
@@ -115,6 +170,7 @@ table.center{
 .augmentation{
     overflow-x: auto;
     border-collapse: collapse;
+    text-align: center;
 }
 
 td, th{
@@ -125,4 +181,8 @@ td, th{
 
 tr:nth-child(even){
     background-color: #00000065;
+}
+
+figcaption{
+    font-size: 12px;
 }

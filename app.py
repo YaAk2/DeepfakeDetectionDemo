@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template, redirect, jsonify, url_for
 import pafy
 import mimetypes
 import requests
@@ -8,9 +8,14 @@ import cv2
 import PIL
 from PIL import Image
 import os
+from werkzeug.utils import secure_filename
 
 from static.predict import img2out, vid2out
 
+
+#
+import base64
+#
 
 app = Flask(__name__)
 
@@ -51,6 +56,7 @@ def classify_file():
         if request.files:
             file = request.files["file"]
             if (file.mimetype).split('/')[0] == 'image':
+                file = request.files['file']
                 try:
                     img = Image.open(file).convert('RGB')
                     c = img2out(img, app.predictor)
@@ -64,13 +70,13 @@ def classify_file():
                     os.remove('tmp.mp4')
                 except:
                     c = 'Please check if the uploaded file a valid image/video format'
-        try:
-            return render_template("deepfakedetection.html", pred_from_file=c)
-        except UnboundLocalError:
-            c = 'Please check if the uploaded file a valid image/video format'
-            return render_template("deepfakedetection.html", pred_from_file=c)
     elif request.method == "GET":
         return redirect('deepfakedetection.html')
+    try:
+        return render_template("deepfakedetection.html", pred_from_file=c)
+    except UnboundLocalError:
+        c = 'Please check if the uploaded file a valid image/video format'
+        return render_template("deepfakedetection.html", pred_from_file=c)
 
 
 @app.route("/classify-url", methods=["GET", "POST"])
@@ -95,9 +101,9 @@ def classify_url():
                     c = vid2out(video, app.predictor)
                 except ValueError:
                     c = 'Please check if the URL is valid'
-        return render_template("deepfakedetection.html", pred_from_url=c)
     elif request.method == "GET":
         return redirect('deepfakedetection.html')
+    return render_template("deepfakedetection.html", pred_from_url=c)
 
 def main():
     app.run(host='0.0.0.0') 

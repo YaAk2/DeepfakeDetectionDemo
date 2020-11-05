@@ -5,7 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../static/css/main.css">
-        <script type="javascript" src="../static/js/main.js"></script>
+        <script type="text/javascript" src="../static/js/main.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
         <title> DFirt </title>
     </head>
     <body>
@@ -21,32 +22,17 @@
                     <path class="tanuki-shape tanuki-left-cheek" fill="#0080ff" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"></path>
                     <path class="tanuki-shape tanuki-right-cheek" fill="#0080ff" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"></path>
                   </svg>
-            <!-- <a href="https://gitlab.irt.de/ai/deepfake_detection">
-                <img class="git-btn" title="Go to GitLab" src="/static/git.svg" alt="git button">
-            </a> -->
-            <!-- <div class="logo"> -->
             <a href="https://lab.irt.de/" target="_blank">
                 <img class="IRTlogo" title="Go to IRT Lab" src="/static/logo_IRTLab.png" alt="IRT Lab logo">
             </a>
-            <!-- </div> -->
             <div class="menu">
                 <nav>
                     <ul>
-                        <!-- <li>
-                            <form action="/home.html" method="POST">
-                                <input class="home-btn" title="Home" type="image" src="/static/home_button.svg" alt="home button">
-                            </form>
-                        </li> -->
                         <li>
                             <form action="/welcome.html" method="POST">
                                 <input class="nav" type="submit" name="welcome" value="Welcome">
                             </form>
                         </li>
-                        <!-- <li>
-                            <form action="/file.html" method="POST">
-                                <input type="submit" title="classify a file" name="File" value="File">
-                            </form>
-                        </li> -->
                         <li>
                             <form action="/deepfakedetection.html" method="POST">
                                 <input class="nav" type="submit" title="classify a file or an URL" name="deepfakedetection" value="Deepfake Detection">

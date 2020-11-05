@@ -11,11 +11,35 @@
         thus being an increasing <a href="https://www.zdf.de/nachrichten/digitales/deepfake-video-sorge-faelschungen-100.html" target="_blank">threat for democracy</a>.
     </p>
     <h3>
-        How it works
+        Types of Deepfake manipulations
     </h3>
-    <!-- <div class="flowchart">
-        <img src="/static/flowchart.svg" alt="flowchart">
-    </div> -->
+    <p>
+        Deepfakes are categorized in four types of manipulations, i.e. Entire Face Synthesis, Attribute Manipulation, Identity Swap and Expression Swap. 
+        Entire Face Synthesis, as the name says synthesizes an entire fictional face using powerful <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank">GANs</a>. 
+        In contrast, Attribute Manipulation modifies an existing face, and this modification can be achieved through <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank">GANs</a>. 
+        Facial modifications are for example aging or de-aging, changing of hair color or the skin, changing the gender, adding a beard etc. 
+        Identity Swap, commonly known as deepfakes, replaces the face of person A with the face of person B. 
+        This manipulation, as in the example of <a href="https://faceswap.dev/" target="_blank">faceswap</a>, is carried out using deep learning-based approaches. 
+        Lastly, Expression Swap modifies facial expression, usually it is the mouth area, by replacing the motion of a certain region in the face of person A with the motion of person B. 
+        Popular approaches for Expression Swap are <a href="https://niessnerlab.org/projects/thies2016face.html" target="_blank">Face2Face</a> or 
+        <a href="https://niessnerlab.org/projects/thies2019neural.html" target="_blank">NeuralTextures</a>. 
+        An overview of the different types of manipulation can be seen below.  
+    </p>
+    <div class="technical">
+        <img class="deepfaketypes" src="/static/deepfaketypes.JPG" alt="Types of Deepfake manipulations">
+        <figcaption>Reprinted from “DeepFakes and Beyond: A Survey of Face Manipulation and Fake Detection”, by R. Tolosana, R. Vera-Rodriguez, J. Fierrez, A. Morales, & J. Ortega-Garcia. (2020).</figcaption>
+    </div>
+    <h3>
+        How can you identify a Deepfake?
+    </h3>
+    <p>
+        As of today, one can identify whether content is Deepfake or real by observing some specific characteristics such as face discolorations, 
+        blurriness in face regions etc. Nevertheless, the Deepfakes creators improve their techniques and it is increasingly harder for a human to make accurate predictions. 
+        For this reason, systems that detecte automatically Deepfakes are crucial.  
+    </p>
+    <h3>
+        How our system works
+    </h3>
     <p>
         The system takes as input an image, video or an URL. The format of the uploaded files can be any of the common image or video formats. 
         For the required URL format please refer to the URL page.
@@ -25,7 +49,7 @@
         <a href="https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html" target="_blank">EfficientNet-B0</a> trained on a collection of deepfake and real datasets.
         Eventually, it predicts wether the preprocessed input is a deepfake or not and the algorithm terminates.
         The same process is sequentially applied to a specific number of frames when a video is provided and the prediction is avaraged over all these frames.    
-    </p>
+    </p> 
     <h3>
         Dataset
     </h3>
@@ -55,6 +79,7 @@
                 <td><img src="/static/augmentation/Bild10.jpg" alt="" width="120" height="120"></td>
             </tr>
         </table>
+        <figcaption>Samples from DFirt before and after postprocessing.</figcaption>
     </div>
     <h3>
         Performance
