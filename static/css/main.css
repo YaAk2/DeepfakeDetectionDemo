@@ -148,6 +148,7 @@ body.loading .modal {
 
 .technical{
     text-align: center;
+    overflow-x: auto;
 }
 
 .deepfaketypes{
