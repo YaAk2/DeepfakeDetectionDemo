@@ -11,17 +11,19 @@
     <div class="prediction">
         {{pred_from_url}}
     </div>
-    <div>
+    <div class="format">
         <small>
-            Note: if you paste an URL to an image make sure that the it ends on a valid image format, i.e. jpeg or png.
+            If you paste an URL to an image make sure that the it ends on a valid image format, i.e. jpeg or png. For example...
         </small>
     </div>
-
-    <div class="info">
-        Or if you want to classify a file you can upload it below and hit the predict button. 
+    <div class="example-url">
+        <small>
+            https://upload.wikimedia.org/wikipedia/commons/1/1f/Woman_1.jpg<br>
+            https://www.youtube.com/watch?v=Ho9h0ouemWQ
+        </small>
     </div>
     <form action="/classify-file" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" id="file" required>
+        <input type="file" name="file" id="file" placeholder="Upload a file" aria-label="Upload a file" required>
         <div>
             <input class="predict-btn" type="submit" value="Predict">
         </div>
@@ -29,7 +31,7 @@
     <div class="prediction">
         {{pred_from_file}}
     </div>
-    <div>
+    <div class="format">
         <small>
             You can upload any image or video format, i.e. jpeg, png and mp4 or wav.
         </small>

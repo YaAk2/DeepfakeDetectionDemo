@@ -6,20 +6,32 @@
 }
 
 .container{
-    position: absolute;
     width: 100%;
     height: 100%;
 }
 
+.technical{
+    margin:0 auto;
+    width: 95%;
+    height: 95%;
+}
+
+.acknow{
+    margin:0 auto;
+    width: 29%;
+    height: 29%;
+}
+
 .menu{
-    margin-top: 60px;
+    margin-top: 4%;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .menu nav ul li{
     display: inline-flex;
     transition: all ease-in-out 0.2s;
-    margin: 8px;
+    margin: 0.5%;
 }
 
 .nav{
@@ -33,43 +45,62 @@
 }
 
  .git-btn{
-    margin-top: 32px;
-    float: right;
-    right: 0;
-    width: 50px;
+    width: 20px;
     height: auto;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
-img.IRTlogo{
-    position: static;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+.IRTcenter{
+    text-align: center;
+}
+
+.IRTlogo{
+    margin-top: 35px;
     width: 350px;
     height: auto;
 }
 
-img.DFirtlogo{
-    float: left;
-    left: 0;
-    width: 100px;
+.DFirtlogo{
+    text-align: center;
+    width: 130px;
     height: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-bottom: 3%;
 }
 
 input[type=submit], input[type=button]{
+    margin-top: 20px;
     cursor: pointer;
+}
+
+input[type=url], input[type=file]{
+    border: 1px solid silver;
+    border-radius: 5px;
+    height: 35px;
+    width: 15%;
+}
+
+input[type=file]{
+cursor: pointer;
+}
+
+::placeholder{
+    text-align: center;
+    font-size: auto;
+    color: silver;
+}
+ 
+#file{
+    text-indent: -8.6em;
+    text-align: left;
 }
 
 
 .page{
-    margin-top: 120px;
+    margin-top: 60px;
 }
 
 h3{
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     color: #0000009a;
@@ -87,7 +118,18 @@ h2{
     margin-bottom:20px;
 }
 
+.example-url{
+    margin-top: 10px;
+    font-family: Courier, monospace;
+    margin-bottom: 65px;
+}
+
+.format{
+    font-style: italic;
+}
+
 p{
+    hyphens: auto;
     text-align: justify;
 }
 
@@ -124,35 +166,13 @@ p{
     cursor: pointer;
 }
 
-.modal {
-    display:    none;
-    position:   fixed;
-    z-index:    1000;
-    top:        0;
-    left:       0;
-    height:     100%;
-    width:      100%;
-    background: rgba( 255, 255, 255, .8 ) 
-                url('http://i.stack.imgur.com/FhHRx.gif') 
-                50% 50% 
-                no-repeat;
-}
-
-body.loading .modal {
-    overflow: hidden;   
-}
-
-body.loading .modal {
-    display: block;
-}
-
-.technical{
+.deepfaketypescenter{
     text-align: center;
     overflow-x: auto;
 }
 
 .deepfaketypes{
-    width: 515px;
+    width: 712px;
     height: auto;
 }
 
@@ -187,3 +207,4 @@ tr:nth-child(even){
 figcaption{
     font-size: 12px;
 }
+

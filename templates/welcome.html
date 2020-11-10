@@ -2,40 +2,14 @@
 
 {% block body %}
 
-<div>
-    <!-- Welcome to the DFirt page!<br>
-    Here you can upload images, videos, paste URLs to images or videos and classify if it's a deepfake! -->
+
+<div class="intro">
+    <img class="DFirtlogo" src="/static/logo.svg" alt="DFirt logo">
     <h2>Welcome at the DFirt demo page!</h2>
     <p class="intro">
-        In this demo, you can predict whether the input content is a DeepFake 
-        (i.e. has been manipulated by deep learning technology) or real.<br> The input can be either a file (image/video) 
-        or a URL (pointing to an image/video). 
+        In this demo, you can predict whether the input content is a DeepFake (i.e. has been manipulated by deep learning technology) or real.<br> 
+        In the “Deepfake detection” section you can upload your input, which can be either a file (image/video) or an URL (pointing to an image/video). 
     </p>
-    <!-- <h3>
-        How it works ...
-    </h3>
-    <p>
-        Firstly, a face is detected on your sample using a face detector.<br>
-        Secondly, the detected face is cropped, resized and fed through the deepfake classifier.  
-    </p>
-    <h3>
-        Dataset
-    </h3>
-    <p>
-        The training set consisted of 
-        <a href="http://www.niessnerlab.org/projects/roessler2019faceforensicspp.html" target="_blank">FaceForensics++</a> dataset, 
-        <a href="http://cvlab.cse.msu.edu/dffd-dataset.html" target="_blank">DFFD</a> dataset, 
-        <a href="https://ai.facebook.com/datasets/dfdc/" target="_blank">DFDC</a> dataset, 
-        <a href="https://ai.googleblog.com/2019/09/contributing-data-to-deepfake-detection.html" target="_blank">google's deepfake</a> dataset.<br>
-        These datasets were combined and augmented further. As preprocessing step only cropping and resizing of the samples were used.
-    </p>
-    <h3>
-        Deepfake Classifier
-    </h3>
-    <p>
-        The model to detect faces is a pretrained <a href="https://github.com/timesler/facenet-pytorch" target="_blank">MTCNN</a>. To classify between deepfakes and real an 
-        <a href="https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html" target="_blank">EfficientNet-B0</a> is deployed.
-    </p> -->
 </div>
 
 {% endblock %}

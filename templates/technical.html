@@ -2,13 +2,21 @@
 
 {% block body %}
 
-<div>
+<div class="technical">
     <h3>What is a Deepfake?</h3>
     <p>
         A DeepFake is a synthetic type of media, manipulated by <a href="https://lab.irt.de/deep-learning-in-multimedia/" target="_blank">Deep Learning</a> algorithms, 
         where the person saying or doing something is realistically replaced by another person. 
         DeepFakes can be used a very convincing means of misinformation. The amount as well as the quality of DeepFakes that are circulated in the web every day is rapidly increasing, 
         thus being an increasing <a href="https://www.zdf.de/nachrichten/digitales/deepfake-video-sorge-faelschungen-100.html" target="_blank">threat for democracy</a>.
+    </p>
+    <h3>
+        How can you identify a Deepfake?
+    </h3>
+    <p>
+        As of today, one can identify whether content is Deepfake or real by observing some specific characteristics such as face discolorations, 
+        blurriness in face regions etc. Nevertheless, the Deepfakes creators improve their techniques and it is increasingly harder for a human to make accurate predictions. 
+        For this reason, systems that detecte automatically Deepfakes are crucial.  
     </p>
     <h3>
         Types of Deepfake manipulations
@@ -25,18 +33,10 @@
         <a href="https://niessnerlab.org/projects/thies2019neural.html" target="_blank">NeuralTextures</a>. 
         An overview of the different types of manipulation can be seen below.  
     </p>
-    <div class="technical">
+    <div class="deepfaketypescenter">
         <img class="deepfaketypes" src="/static/deepfaketypes.JPG" alt="Types of Deepfake manipulations">
         <figcaption>Reprinted from “DeepFakes and Beyond: A Survey of Face Manipulation and Fake Detection”, by R. Tolosana, R. Vera-Rodriguez, J. Fierrez, A. Morales, & J. Ortega-Garcia. (2020).</figcaption>
     </div>
-    <h3>
-        How can you identify a Deepfake?
-    </h3>
-    <p>
-        As of today, one can identify whether content is Deepfake or real by observing some specific characteristics such as face discolorations, 
-        blurriness in face regions etc. Nevertheless, the Deepfakes creators improve their techniques and it is increasingly harder for a human to make accurate predictions. 
-        For this reason, systems that detecte automatically Deepfakes are crucial.  
-    </p>
     <h3>
         How our system works
     </h3>
@@ -116,7 +116,9 @@
         The table above contains the confusion matrix for <a href="https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html" target="_blank">EfficientNet-B0</a> 
         on <a href="http://cvlab.cse.msu.edu/dffd-dataset.html" target="_blank">DFFD</a> test set. 
         The classes Expression Swap, Identity Swap and Real are tested on <a href="http://www.niessnerlab.org/projects/roessler2019faceforensicspp.html" target="_blank">FaceForensics++</a> 
-        automated benchmark. Below you can see the performance of the deepfake classifier on this test set. 
+        automated benchmark. FaceFonesics++ provides a test set of 1000 frames of forged faces from 1000 videos. 
+        Each frame was taken randomly from each video. Once the frames are classified and the predicted labels are saved, we can upload the saved predictions and FaceForensics++ automated 
+        benchmark calculates the binary classification accuracy. Below you can see the performance of the deepfake classifier on this test set. 
     </p>
     <div class="performance">
         <table class="center">
