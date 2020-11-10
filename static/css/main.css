@@ -18,8 +18,8 @@
 
 .acknow{
     margin:0 auto;
-    width: 29%;
-    height: 29%;
+    width: 95%;
+    height: 95%;
 }
 
 .menu{
@@ -90,8 +90,8 @@ cursor: pointer;
 }
  
 #file{
-    text-indent: -8.6em;
-    text-align: left;
+    /* text-indent: -8.6em;
+    text-align: left; */
 }
 
 
