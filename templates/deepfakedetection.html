@@ -3,7 +3,7 @@
 {% block body %}
 <div class="classification">
     <form action="/classify-url" method="POST" enctype="multipart/form-data">
-        <input type="url" name="url" id="url" placeholder="https://www.youtube.com/watch?v=xxxxxxxxxxx" required>            
+        <input class="input-field" type="url" name="url" id="url" placeholder="Paste an URL..." required>            
         <div>
             <input class="predict-btn" type="submit" value="Predict">
         </div>
@@ -13,7 +13,7 @@
     </div>
     <div class="format">
         <small>
-            If you paste an URL to an image make sure that the it ends on a valid image format, i.e. jpeg or png. For example...
+            You can paste youtube videos or if you paste an URL pointing to an image make sure that the it ends on a valid image format, i.e. jpeg or png. For example...
         </small>
     </div>
     <div class="example-url">
@@ -23,10 +23,19 @@
         </small>
     </div>
     <form action="/classify-file" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" id="file" placeholder="Upload a file" aria-label="Upload a file" required>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <label for="file-upload" class="custom-file-upload">Upload file...</label>
+        <input type="file" name="file" id="file-upload" aria-label="Upload a file" style="display:none;" required>
         <div>
             <input class="predict-btn" type="submit" value="Predict">
         </div>
+        <script>
+            $('#file-upload').change(function() {
+            var i = $(this).prev('label').clone();
+            var file = $('#file-upload')[0].files[0].name;
+            $(this).prev('label').text(file);
+            });
+        </script>
     </form>
     <div class="prediction">
         {{pred_from_file}}
@@ -37,8 +46,6 @@
         </small>
     </div>
 </div>
-
-<div class="modal"></div>
 
 {% endblock %}
 
