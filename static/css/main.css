@@ -56,7 +56,7 @@
 
 .IRTlogo{
     margin-top: 35px;
-    width: 350px;
+    width: 112px;
     height: auto;
 }
 
@@ -67,6 +67,8 @@
     margin-bottom: 3%;
 }
 
+
+
 .custom-file-upload {
     display: inline-block;
     border: 1px solid silver;
@@ -76,7 +78,7 @@
     overflow-x: auto;
     color: silver;
     text-align: center;
-    font-size: auto;
+    font-size: 14px;
     cursor: pointer;
   }
   
@@ -95,7 +97,7 @@ input[type=submit], input[type=button]{
 }
 
 ::placeholder{
-    overflow-x: auto;
+    overflow-x: 14px;
     text-align: center;
     color: silver;
     font-size: auto;
@@ -103,7 +105,7 @@ input[type=submit], input[type=button]{
 
 
 .page{
-    margin-top: 60px;
+    margin-top: 7%;
 }
 
 h3{
@@ -132,6 +134,8 @@ h2{
 }
 
 .format{
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-style: italic;
 }
 
@@ -146,8 +150,7 @@ p{
 }
 
 .classification{
-    margin-top: 80px;
-    margin-bottom: 200px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -169,11 +172,10 @@ p{
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    margin-top: 8px;
     cursor: pointer;
 }
 
-.deepfaketypescenter{
+.deepfaketypes-center{
     text-align: center;
     overflow-x: auto;
 }
@@ -183,35 +185,29 @@ p{
     height: auto;
 }
 
-table.center{
+.augmentation-center{
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-.performance{
     overflow-x: auto;
-    border-collapse: collapse;
 }
 
 .augmentation{
-    overflow-x: auto;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-td, th{
-    border: 1px solid #00000065;
-    text-align: center;
-    padding: 8px;
-}
-
-tr:nth-child(even){
-    background-color: #00000065;
+    width: 412px;
+    height: auto;
 }
 
 figcaption{
     font-size: 12px;
+}
+
+.performance-center{
+    text-align: center;
+    overflow-x: auto;
+}
+
+.performance{
+    width: 920px;
+    height: auto;
 }
 
